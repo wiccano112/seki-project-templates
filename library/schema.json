@@ -17,6 +17,11 @@
               "description": "a library marked as a 'build' dist output",
               "type":"boolean",
               "default": false
+            },
+            "private": {
+              "description": "The created library will have the option to be published in a private repository",
+              "type":"boolean",
+              "default": true
             }
           },
           "if": {
@@ -36,7 +41,7 @@
                 "properties": {
                   "organization": {
                     "type": "string",
-                    "enum": ["cencosudx", "team_seki", "team_yumi"],
+                    "enum": ["cencosudx", "team_seki", "team_yumi", "Cencosud_xlabs, CENCOTECH"],
                     "description": "npm organization name"
                   }
                 }
