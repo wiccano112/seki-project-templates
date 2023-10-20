@@ -18,7 +18,7 @@
               "type":"boolean",
               "default": false
             },
-            "private": {
+            "private-registeri": {
               "description": "The created library will have the option to be published in a private repository",
               "type":"boolean",
               "default": true
@@ -41,7 +41,7 @@
                 "properties": {
                   "organization": {
                     "type": "string",
-                    "enum": ["cencosudx", "team_seki", "team_yumi", "Cencosud_xlabs, CENCOTECH"],
+                    "enum": ["cencosudx", "team_seki", "team_yumi", "Cencosud_xlabs, Cencosud-Cencotech"],
                     "description": "npm organization name"
                   }
                 }
