@@ -3,6 +3,7 @@ module.exports = async (runner, args) => {
     console.log('> POST: Cleansing (Web):');
 
     await runner.execute([
+      '',
       'rm -rf ./src/lib'
     ], {
       cwd: args.workspacePath

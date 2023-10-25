@@ -18,7 +18,7 @@
               "type":"boolean",
               "default": false
             },
-            "private-registeri": {
+            "private-registry": {
               "description": "The created library will have the option to be published in a private repository",
               "type":"boolean",
               "default": true

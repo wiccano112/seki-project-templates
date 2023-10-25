@@ -7,6 +7,10 @@ module.exports = async (runner, args) => {
 
     const rc = args.rc;
 
+    console.log('RPM args', args)
+    console.log('RPM WAS HERE', args.rc)
+    console.log('RPM rc.path', args.rc.path)
+    console.log('RPM runner', runner)
     // plubishable: a library marked as publishable (npm publish)
     // buildable: a library marked as a "build" dist output
     const isPublishable = !!rc.settings.publishable;
@@ -22,7 +26,8 @@ module.exports = async (runner, args) => {
 
     await runner.execute([
       'npm install -D @nrwl/js@14.4.3',
-      `npx nx g @nrwl/js:lib ${rc.path} ${publishableArg} ${buildableArg} ${tagArg}`
+      `npx nx g @nrwl/js:lib ${rc.path} ${publishableArg} ${buildableArg} ${tagArg}`,
+      ''
     ], {
       cwd: rc.workspace_path
     })
