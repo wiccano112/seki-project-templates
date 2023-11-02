@@ -10,7 +10,7 @@
           "projects": "self"
         }
       ],
-      "executor": "@nrwl/node:webpack",
+      "executor": "@nx/node:webpack",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "release",
       "options": {
@@ -47,7 +47,7 @@
           "projects": "self"
         }
       ],
-      "executor": "@nrwl/node:node",
+      "executor": "@nx/node:node",
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "{{data.path}}:build"
@@ -69,7 +69,7 @@
           "projects": "self"
         }
       ],
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "outputs": [
         "{options.outputFile}"
       ],
@@ -86,7 +86,7 @@
           "projects": "self"
         }
       ],
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": [
         "coverage/{{data.group_folder}}/{{data.path}}"
       ],

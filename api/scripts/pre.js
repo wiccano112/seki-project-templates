@@ -1,11 +1,12 @@
 module.exports = async (runner, args) => {
   try {
     console.log('> PRE: Installing prerequisites (API):');
-
+    console.log('> PRE: WELCOME TO RPMLABS:');
+    
     const rc = args.rc;
     await runner.execute([
-      'npm install -D @nrwl/nest@14.4.3',
-      `npx nx g @nrwl/nest:app ${rc.path}`
+      'npm install -D @nx/nest',
+      `npx nx g @nx/nest:app ${rc.path}`
     ], {
       cwd: rc.workspace_path
     })
